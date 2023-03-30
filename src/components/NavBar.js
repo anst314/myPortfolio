@@ -1,8 +1,9 @@
 
 import React from "react";
+import AppBar from '@mui/material/AppBar';
 import { Link } from "react-router-dom"
 import "../styles/NavBar.css";
-import ReorderIcon from "@material-ui/icons/Reorder";
+import ReorderIcon from '@mui/icons-material/Reorder';;
 
 function NavBar() {
     return (
