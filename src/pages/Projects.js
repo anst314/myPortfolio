@@ -4,7 +4,7 @@ import React from "react";
 function Projects() {
     const projects = [
         {title: "sci-fi", url: "https://github.com/anst314/starwars-api"},
-        {title: "sci-fi", url: "https://github.com/anst314/starwars-api"},
+        {title: "stocks", url: "https://github.com/anst314/router-stock-app"},
     ]
     return (
     <div>
