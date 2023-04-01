@@ -9,14 +9,14 @@ function NavBar() {
     return (
        <div className="navbar">
         <div className="toggleButton">
-            <button> 
-                {" "}
-                <ReorderIcon /> </button> {" "}
+            
+                <ReorderIcon fontSize="small"/>
         </div>
         <div className="links">
             <Link to="/"> Home </Link>
             <Link to="/projects"> Projects </Link>
             <Link to="/about"> About </Link>
+            <Link to="/hobbies"> Hobbies </Link>
         </div>
        </div>
     )

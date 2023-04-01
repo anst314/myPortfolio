@@ -1,24 +1,16 @@
-
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import PlayerDetail from "../components/PlayerDetail";
+import React from 'react'
+import audio from '../images/hiphop-lofi-music.m4a'
 
 function Home() {
-    const [players, setPlayers] = useState([]);
-    useEffect(() => {
-        fetch("https://www.balldontlie.io/api/v1/players")
-        .then(response=> response.json()) 
-        .then(data=> {setPlayers(data.data)})
-    }, []);
-    return (
+  return (
     <div>
-        {players.map(player=> {
-            return <PlayerDetail player = { player }/>
+        <audio controls>
+  {/* <source src={audio} type="audio/*"/> */}
+    </audio>
+        <iframe width="700" height="500" allow="autoplay" src="https://player.vimeo.com/video/553617869?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1" title="description"></iframe>
 
-        })}
     </div>
-    )
+  )
 }
 
 export default Home;
