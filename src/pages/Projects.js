@@ -1,10 +1,13 @@
 
 import React from "react";
+import stockScreenShot from '../images/stock-app.png'
+import memoryGameScreenShot from '../images/memoryGame.png'
 
 function Projects() {
     const projects = [
-        {title: "sci-fi", url: "https://github.com/anst314/starwars-api"},
-        {title: "stocks", url: "https://github.com/anst314/router-stock-app"},
+        {title: "starWars", url: "https://github.com/anst314/starwars-api"},
+        {title: "stocks", url: "https://github.com/anst314/router-stock-app", image: stockScreenShot},
+        {title: "memoryGame", url: "https://github.com/anst314/memoryGame", image: memoryGameScreenShot},
     ]
     return (
     <div>
@@ -12,6 +15,9 @@ function Projects() {
             return (
                 <div>
                     <h5>{project.title}</h5>
+                    <div>
+                    {project.image && <img src={project.image}/>}
+                    </div>
                     <a target="_blank" href={project.url}>github repo</a>
                 </div>
             )

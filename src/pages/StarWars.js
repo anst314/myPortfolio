@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import PlayerDetail from "../components/PlayerDetail";
+import { Card, Grid } from 'semantic-ui-react'
 
 function StarWars() {
     const [films, setFilms] = useState([]);
@@ -14,17 +15,26 @@ function StarWars() {
             setFilms(data.results)})
     }, []);
     return (
-    <div>
+    <Grid columns={3}>
         {films.map(film=> {
             return(
-                <div>
-                    {film.director}
-                    {film.producer}
-                </div>
+                <Grid.Column>
+                    <Card>
+                        <Card.Content>
+                           <Card.Header>{film.title}</Card.Header>
+                            <Card.Description>
+                                <div>Director: {film.director}</div>
+                                <div>Producer: {film.producer}</div>
+                            </Card.Description>
+                        </Card.Content>
+
+                    </Card>
+                    
+                </Grid.Column>
             )
 
         })}
-    </div>
+    </Grid>
     )
 }
 

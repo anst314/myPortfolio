@@ -5,6 +5,8 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: grey !important;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .routeContainer {
@@ -13,4 +15,28 @@ body {
 
 iframe {
   border: none;
+}
+
+h2 {
+  color: crimson;
+}
+
+p {
+  font-style: italic;
+  font-family: 'Orbitron', sans-serif;
+}
+
+span {
+  color: red;
+}
+
+#selfie {
+  width: 220px;
+  height: 300px;
+  margin-top: 25px;
+}
+
+#about-pic {
+  width: 800px;
+  height: 800px;
 }

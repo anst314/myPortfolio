@@ -8,9 +8,8 @@ import ReorderIcon from '@mui/icons-material/Reorder';;
 function NavBar() {
     return (
        <div className="navbar">
-        <div className="toggleButton">
-            
-                <ReorderIcon fontSize="small"/>
+        <div className="toggleButton">            
+            <ReorderIcon fontSize="small"/>
         </div>
         <div className="links">
             <Link to="/"> Home </Link>
