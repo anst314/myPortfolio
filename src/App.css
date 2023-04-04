@@ -17,12 +17,18 @@ iframe {
   border: none;
 }
 
+h1 {
+  color: white;
+}
+
 h2 {
   color: crimson;
 }
 
 p {
+  color: white;
   font-style: italic;
+  font-size: large;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -34,6 +40,8 @@ span {
   width: 220px;
   height: 300px;
   margin-top: 25px;
+  border-radius: 200px;
+  object-fit: cover;
 }
 
 #about-pic {

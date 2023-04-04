@@ -4,7 +4,7 @@ import React from "react";
 import { LinkedIn } from "@mui/icons-material";
 import { Email } from "@mui/icons-material";
 import { GitHub } from "@mui/icons-material";
-import image from '../images/android-selfie3.PNG'
+import image from '../images/android-selfie4.PNG'
 
 function About() {
     return(  
@@ -19,7 +19,7 @@ function About() {
 
             But my life is not all about work- I also enjoy sci-fi movies, and basketball. 
             When I'm not on my computer you will usually find me spending time with family or<br></br>
-            exercising.
+            transporting to the future as a super hero android.
 
             I created this site as a launchpad for my creativity. I hope you find it as budding
             potential.  If you have any questions or just want to say hello, please don't 
